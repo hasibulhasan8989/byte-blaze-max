@@ -7,9 +7,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Main from './Layout/Main.jsx';
-import Home from './Components/Home.jsx';
-import Blogs from './Components/Blogs.jsx';
-import Bookmarks from './Components/Bookmarks.jsx';
+import Home from './Pages/Home.jsx';
+import Blogs from './Pages/Blogs.jsx';
+import Bookmarks from './Pages/Bookmarks.jsx';
 
 
 

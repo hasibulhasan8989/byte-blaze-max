@@ -5,7 +5,7 @@ const Nav = () => {
     return (
         <div className="navbar bg-base-100 shadow-lg px-2 md:px-8 fixed">
      <div className="flex-1">
-       <a className="btn btn-ghost text-2xl gap-0 normal-case text-secondary">Byte<span className='text-primary'>Blaze</span></a>
+       <Link to={'/'} className="btn btn-ghost text-2xl gap-0 normal-case text-secondary">Byte<span className='text-primary'>Blaze</span></Link>
   </div>
   <div className="flex gap-4 items-center">
     <ul className="menu menu-horizontal px-1 gap-6">

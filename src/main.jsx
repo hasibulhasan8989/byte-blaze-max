@@ -13,6 +13,8 @@ import Bookmarks from './Pages/Bookmarks.jsx';
 import Blog from './Pages/Blog.jsx';
 import Author from './Components/Author.jsx';
 import Content from './Components/Content.jsx';
+import { Toaster } from 'react-hot-toast';
+
 
 
 
@@ -74,5 +76,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
    
     <RouterProvider router={router} />
+    <Toaster></Toaster>
   </StrictMode>,
 )

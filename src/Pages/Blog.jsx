@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Link, Outlet, useLoaderData } from "react-router-dom";
+import { MdBookmarkAdd } from "react-icons/md";
+import { saveBlog } from "../assets/Utils";
+
 
 
 const Blog = () => {
@@ -11,7 +14,11 @@ const Blog = () => {
 
 
   }=blog
-  console.log(blog)
+
+  const handleBookmark=()=>{
+    saveBlog(blog)
+    console.log(blog)
+  }
 
     return (
         <div className="max-w-4xl px-6 py-16 mx-auto space-y-12" bis_skin_checked="1">
@@ -44,6 +51,11 @@ const Blog = () => {
 		   </svg>
 		   <span>Author</span>
 	        </Link>
+
+            <div onClick={()=>handleBookmark()} className="flex  min-h-[50px] justify-center items-center ml-6 hover:scale-130 cursor-pointer">
+            <MdBookmarkAdd size={25} className="text-secondary"></MdBookmarkAdd>
+            </div>
+            
 
 
 	

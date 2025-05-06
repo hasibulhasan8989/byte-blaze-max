@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown';
 
 const Content = () => {
   const blog = useLoaderData();
-  const { tags, title, published_at, body_html, cover_image } = blog;
+  const { tags, title, published_at, body_html, cover_image,url } = blog;
   return (
     <div>
       <div className=" mx-auto group hover:no-underline focus:no-underline  hidden  border-3 rounded-lg border-primary sm:block p-6">
@@ -29,9 +29,9 @@ const Content = () => {
         </div>
 
         <div className="p-6 space-y-2" bis_skin_checked="1">
-          <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
+          <a href={url} target="blank" className="text-2xl font-semibold group-hover:underline group-focus:underline">
             {title}
-          </h3>
+          </a>
           <span className="text-xs  text-gray-400">
             {new Date(published_at).toLocaleDateString()}
           </span>
